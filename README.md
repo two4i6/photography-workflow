@@ -7,8 +7,9 @@ still learn js & react
 still under development
 
 # Project structure
+```
 $PROJECT_ROOT
-│   
+│   # Page files & React component files
 ├── src
 │    │ # Page files
 │    ├── pages
