@@ -46,5 +46,5 @@ jobs:
           port: ${{ secrets.PORT }}
           command: |
             docker login --username=${{ secrets.DOCKER_HUB_USERNAME }} --password=${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-            docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrtes.DOCKER_HUB_REPOSITORY}}:latest
-            docker run -d -p 3000:3000 ${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrtes.DOCKER_HUB_REPOSITORY}}:latest
+            docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrets.DOCKER_HUB_REPOSITORY}}:latest
+            docker run -d -p 3000:3000 ${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrets.DOCKER_HUB_REPOSITORY}}:latest
