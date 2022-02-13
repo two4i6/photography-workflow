@@ -29,8 +29,8 @@ jobs:
         env:
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrtes.DOCKER_HUB_REPOSITORY}}:$IMAGE_TAG -t ${{ secrets.DOCKER_HUB_USERNAME }}/cicd-demo:latest .
-          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrtes.DOCKER_HUB_REPOSITORY}} --all-tags
+          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrets.DOCKER_HUB_REPOSITORY}}:$IMAGE_TAG -t ${{ secrets.DOCKER_HUB_USERNAME }}/cicd-demo:latest .
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrets.DOCKER_HUB_REPOSITORY}} --all-tags
   deploy:
     
     needs: build
