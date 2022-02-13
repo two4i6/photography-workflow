@@ -87,7 +87,7 @@ export async function createIndex() {
 
 export async function searchImg(query: any) {
     await conect(); //connect to redis
-
+    
     const repository = new Repository(schema, client);
     const result = await repository.search()
         .where('user').eq(query)
