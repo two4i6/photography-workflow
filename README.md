@@ -20,5 +20,6 @@ $PROJECT_ROOT
 │   # Static files
 └── public
 ```
-
+---
+# Preview
 ![preview](preview.png)
